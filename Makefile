@@ -1,6 +1,6 @@
 .PHONY: all clean
-LDFLAGS=-lraylib -lm -lomp
-CC=cc
+LDFLAGS=-lraylib -lm
+CC=gcc
 CFLAGS=-fopenmp -O3 -Wall -g
 TARGET=./build/arrows
 SRC=$(wildcard src/*.c)
